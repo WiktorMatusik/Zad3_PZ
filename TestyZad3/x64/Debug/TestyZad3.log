@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  test.cpp
+gtestd.lib(gtest-all.obj) : warning LNK4099: nie znaleziono pliku PDB „gtestd.pdb” z elementem „gtestd.lib(gtest-all.obj)” lub w pozycji „D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\Zad3\x64\Debug\gtestd.pdb”; obiekt zostanie skonsolidowany bez informacji debugowania
+gtest_maind.lib(gtest_main.obj) : warning LNK4099: nie znaleziono pliku PDB „gtest_maind.pdb” z elementem „gtest_maind.lib(gtest_main.obj)” lub w pozycji „D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\Zad3\x64\Debug\gtest_maind.pdb”; obiekt zostanie skonsolidowany bez informacji debugowania
+  TestyZad3.vcxproj -> D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\Zad3\x64\Debug\TestyZad3.exe
