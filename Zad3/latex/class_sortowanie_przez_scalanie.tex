@@ -1,0 +1,115 @@
+\doxysection{Dokumentacja szablonu klasy Sortowanie\+Przez\+Scalanie\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}}
+\hypertarget{class_sortowanie_przez_scalanie}{}\label{class_sortowanie_przez_scalanie}\index{SortowaniePrzezScalanie$<$ T $>$@{SortowaniePrzezScalanie$<$ T $>$}}
+
+
+Szablonowa klasa udostępniająca statyczne metody do sortowania wektorów algorytmem Merge\+Sort.  
+
+
+
+
+{\ttfamily \+\#include $<$Sortowanie\+Przez\+Scalanie.\+h$>$}
+
+\doxysubsubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static void \doxymbox{\hyperlink{class_sortowanie_przez_scalanie_a96a2641c4c5e3b59b1f142f7c6aecabd}{sortuj}} (vector$<$ T $>$ \&tablica)
+\begin{DoxyCompactList}\small\item\em Główna metoda publiczna uruchamiająca proces sortowania rosnącego przekazanego wektora. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static void \doxymbox{\hyperlink{class_sortowanie_przez_scalanie_ae638a042f5f3730c4c1bce07ca85a7e8}{sortuj\+Rekurencyjnie}} (vector$<$ T $>$ \&tablica, size\+\_\+t lewy, size\+\_\+t prawy)
+\begin{DoxyCompactList}\small\item\em Rekurencyjna metoda dzieląca zadany przedział tablicy na dwie mniejsze podtablice. \end{DoxyCompactList}\item 
+static void \doxymbox{\hyperlink{class_sortowanie_przez_scalanie_a89202b042cdc83e7db0513c27e7ffa06}{scal}} (vector$<$ T $>$ \&tablica, size\+\_\+t lewy, size\+\_\+t srodek, size\+\_\+t prawy)
+\begin{DoxyCompactList}\small\item\em Scala dwie sąsiednie, posortowane podtablice w jeden uporządkowany ciąg. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+\subsubsection*{template$<$typename T$>$\newline
+class Sortowanie\+Przez\+Scalanie$<$ T $>$}
+Szablonowa klasa udostępniająca statyczne metody do sortowania wektorów algorytmem Merge\+Sort. 
+
+Klasa implementuje stabilny algorytm sortowania przez scalanie w oparciu o strategię „dziel i zwyciężaj” (ang. Divide and Conquer) o złożoności obliczeniowej \$O(n \textbackslash{}log n)\$. Dzięki wykorzystaniu szablonów obsługuje dowolne typy danych posiadające zdefiniowany operator porównania (\texorpdfstring{$<$}{<}=).
+
+
+\begin{DoxyTemplParams}{Parametry Szablonu}
+{\em T} & Typ elementów przechowywanych w sortowanym wektorze (np. int, long int, float, double) \\
+\hline
+\end{DoxyTemplParams}
+
+
+\label{class_sortowanie_przez_scalanie_doc-func-members}
+\Hypertarget{class_sortowanie_przez_scalanie_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_sortowanie_przez_scalanie_a89202b042cdc83e7db0513c27e7ffa06}\index{SortowaniePrzezScalanie$<$ T $>$@{SortowaniePrzezScalanie$<$ T $>$}!scal@{scal}}
+\index{scal@{scal}!SortowaniePrzezScalanie$<$ T $>$@{SortowaniePrzezScalanie$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{scal()}{scal()}}
+{\footnotesize\ttfamily \label{class_sortowanie_przez_scalanie_a89202b042cdc83e7db0513c27e7ffa06} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{class_sortowanie_przez_scalanie}{Sortowanie\+Przez\+Scalanie}}$<$ T $>$::\+scal (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{tablica}{, }\item[{size\+\_\+t}]{lewy}{, }\item[{size\+\_\+t}]{srodek}{, }\item[{size\+\_\+t}]{prawy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Scala dwie sąsiednie, posortowane podtablice w jeden uporządkowany ciąg. 
+
+Tworzy tymczasowe kopie lewego \+[lewy..srodek] oraz prawego \+[srodek+1..prawy] podprzedziału, a następnie przepisuje elementy w porządku niemalejącym z powrotem do wektora głównego.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\doxymbox{\texttt{in,out}}  & {\em tablica} & Referencja do głównego wektora, w którym zapisywany jest wynik scalania. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em lewy} & Indeks początku lewej podtablicy. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em srodek} & Indeks końca lewej podtablicy (punkt podziału). \\
+\hline
+\doxymbox{\texttt{in}}  & {\em prawy} & Indeks końca prawej podtablicy. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Indeks bieżącego elementu w lewej podtablicy pomocniczej
+
+\texorpdfstring{$<$}{<} Indeks bieżącego elementu w prawej podtablicy pomocniczej
+
+\texorpdfstring{$<$}{<} Indeks docelowy w tablicy wynikowej\Hypertarget{class_sortowanie_przez_scalanie_a96a2641c4c5e3b59b1f142f7c6aecabd}\index{SortowaniePrzezScalanie$<$ T $>$@{SortowaniePrzezScalanie$<$ T $>$}!sortuj@{sortuj}}
+\index{sortuj@{sortuj}!SortowaniePrzezScalanie$<$ T $>$@{SortowaniePrzezScalanie$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sortuj()}{sortuj()}}
+{\footnotesize\ttfamily \label{class_sortowanie_przez_scalanie_a96a2641c4c5e3b59b1f142f7c6aecabd} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{class_sortowanie_przez_scalanie}{Sortowanie\+Przez\+Scalanie}}$<$ T $>$::\+sortuj (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{tablica}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Główna metoda publiczna uruchamiająca proces sortowania rosnącego przekazanego wektora. 
+
+W przypadku tablic pustych lub jednoelementowych metoda kończy działanie natychmiast, nie wykonując zbędnych alokacji pamięci.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\doxymbox{\texttt{in,out}}  & {\em tablica} & Referencja do wektora typu std::\+vector$<$\+T$>$, który ma zostać posortowany w miejscu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sortowanie_przez_scalanie_ae638a042f5f3730c4c1bce07ca85a7e8}\index{SortowaniePrzezScalanie$<$ T $>$@{SortowaniePrzezScalanie$<$ T $>$}!sortujRekurencyjnie@{sortujRekurencyjnie}}
+\index{sortujRekurencyjnie@{sortujRekurencyjnie}!SortowaniePrzezScalanie$<$ T $>$@{SortowaniePrzezScalanie$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sortujRekurencyjnie()}{sortujRekurencyjnie()}}
+{\footnotesize\ttfamily \label{class_sortowanie_przez_scalanie_ae638a042f5f3730c4c1bce07ca85a7e8} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{class_sortowanie_przez_scalanie}{Sortowanie\+Przez\+Scalanie}}$<$ T $>$::\+sortuj\+Rekurencyjnie (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{tablica}{, }\item[{size\+\_\+t}]{lewy}{, }\item[{size\+\_\+t}]{prawy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Rekurencyjna metoda dzieląca zadany przedział tablicy na dwie mniejsze podtablice. 
+
+Wyznacza indeks środkowy przedziału, wywołuje siebie rekurencyjnie dla lewej oraz prawej połowy, a następnie scala oba uporządkowane fragmenty metodą \doxylink{class_sortowanie_przez_scalanie_a89202b042cdc83e7db0513c27e7ffa06}{scal()}.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\doxymbox{\texttt{in,out}}  & {\em tablica} & Referencja do sortowanego wektora. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em lewy} & Indeks początkowy aktualnie rozpatrywanego przedziału. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em prawy} & Indeks końcowy aktualnie rozpatrywanego przedziału. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_sortowanie_przez_scalanie_8h}{Sortowanie\+Przez\+Scalanie.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,158 @@
+\doxysection{Dokumentacja klasy testing::internal::RE}
+\hypertarget{classtesting_1_1internal_1_1_r_e}{}\label{classtesting_1_1internal_1_1_r_e}\index{testing::internal::RE@{testing::internal::RE}}
+
+
+{\ttfamily \+\#include $<$gtest-\/port.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} (const RE \&other)
+\item 
+\doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a8840bd639642f3d4769a94a68ce463c2}{RE}} (const ::\+std::\+string \&regex)
+\item 
+\doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a908ea936a5b7a14479a1b292a7189ca6}{RE}} (const char \texorpdfstring{$\ast$}{*}regex)
+\item 
+\doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_af3ad18e6c0b433f3d85ed23eda8119f3}{\texorpdfstring{$\sim$}{\string~}\+RE}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a755aa35fb49255d8d17bd5451cdedc5e}{pattern}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_aa79a950758d0f1d62f7762d1e9cefe86}{Full\+Match}} (const ::\+std::\+string \&str, const \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} \&re)
+\item 
+static bool \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a1e81f9a87211bdca645e025f8f0236c8}{Partial\+Match}} (const ::\+std::\+string \&str, const \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} \&re)
+\item 
+static bool \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a2b13ec1f6ccd6c32f7efa01e21588f0b}{Full\+Match}} (const char \texorpdfstring{$\ast$}{*}str, const \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} \&re)
+\item 
+static bool \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a97495dd4c2bb9589522823f060c8e8ba}{Partial\+Match}} (const char \texorpdfstring{$\ast$}{*}str, const \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} \&re)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a4c3a519ce849abc57d6d5fffbf1e04dc}{Init}} (const char \texorpdfstring{$\ast$}{*}regex)
+\item 
+\doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a6a07573fee776f88fe045d067dbebe18}{GTEST\+\_\+\+DISALLOW\+\_\+\+ASSIGN\_}} (\doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a44ab32241fab42db5b6f7482776658ec}{pattern\_}}
+\item 
+bool \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_af9062fefab96529ff785f50097416d64}{is\+\_\+valid\_}}
+\item 
+regex\+\_\+t \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a1627cf3c6e38a83518e7aefd659b938b}{full\+\_\+regex\_}}
+\item 
+regex\+\_\+t \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_a1b3e42916c61db479ae90c7a96c22a58}{partial\+\_\+regex\_}}
+\end{DoxyCompactItemize}
+
+
+\label{classtesting_1_1internal_1_1_r_e_doc-constructors}
+\Hypertarget{classtesting_1_1internal_1_1_r_e_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}\index{testing::internal::RE@{testing::internal::RE}!RE@{RE}}
+\index{RE@{RE}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{RE()}{RE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a} 
+testing::\+internal::\+\+RE::\+\+RE (\begin{DoxyParamCaption}\item[{const RE \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a8840bd639642f3d4769a94a68ce463c2}\index{testing::internal::RE@{testing::internal::RE}!RE@{RE}}
+\index{RE@{RE}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{RE()}{RE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a8840bd639642f3d4769a94a68ce463c2} 
+testing::\+internal::\+\+RE::\+\+RE (\begin{DoxyParamCaption}\item[{const ::\+std::\+string \&}]{regex}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a908ea936a5b7a14479a1b292a7189ca6}\index{testing::internal::RE@{testing::internal::RE}!RE@{RE}}
+\index{RE@{RE}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{RE()}{RE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a908ea936a5b7a14479a1b292a7189ca6} 
+testing::\+internal::\+\+RE::\+\+RE (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{regex}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_af3ad18e6c0b433f3d85ed23eda8119f3}\index{testing::internal::RE@{testing::internal::RE}!````~RE@{\texorpdfstring{$\sim$}{\string~}RE}}
+\index{````~RE@{\texorpdfstring{$\sim$}{\string~}RE}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}RE()}{\string~RE()}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_af3ad18e6c0b433f3d85ed23eda8119f3} 
+testing::\+internal::\+\+RE::\+\texorpdfstring{$\sim$}{\string~}\+RE (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{classtesting_1_1internal_1_1_r_e_doc-func-members}
+\Hypertarget{classtesting_1_1internal_1_1_r_e_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classtesting_1_1internal_1_1_r_e_aa79a950758d0f1d62f7762d1e9cefe86}\index{testing::internal::RE@{testing::internal::RE}!FullMatch@{FullMatch}}
+\index{FullMatch@{FullMatch}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{FullMatch()}{FullMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_aa79a950758d0f1d62f7762d1e9cefe86} 
+bool testing::\+internal::\+\+RE::\+\+Full\+Match (\begin{DoxyParamCaption}\item[{const ::\+std::\+string \&}]{str}{, }\item[{const \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} \&}]{re}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a2b13ec1f6ccd6c32f7efa01e21588f0b}\index{testing::internal::RE@{testing::internal::RE}!FullMatch@{FullMatch}}
+\index{FullMatch@{FullMatch}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{FullMatch()}{FullMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a2b13ec1f6ccd6c32f7efa01e21588f0b} 
+bool testing::\+internal::\+\+RE::\+\+Full\+Match (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{const \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} \&}]{re}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a6a07573fee776f88fe045d067dbebe18}\index{testing::internal::RE@{testing::internal::RE}!GTEST\_DISALLOW\_ASSIGN\_@{GTEST\_DISALLOW\_ASSIGN\_}}
+\index{GTEST\_DISALLOW\_ASSIGN\_@{GTEST\_DISALLOW\_ASSIGN\_}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{GTEST\_DISALLOW\_ASSIGN\_()}{GTEST\_DISALLOW\_ASSIGN\_()}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a6a07573fee776f88fe045d067dbebe18} 
+testing::\+internal::\+\+RE::\+\+GTEST\+\_\+\+DISALLOW\+\_\+\+ASSIGN\_ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a4c3a519ce849abc57d6d5fffbf1e04dc}\index{testing::internal::RE@{testing::internal::RE}!Init@{Init}}
+\index{Init@{Init}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a4c3a519ce849abc57d6d5fffbf1e04dc} 
+void testing::\+internal::\+\+RE::\+\+Init (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{regex}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a1e81f9a87211bdca645e025f8f0236c8}\index{testing::internal::RE@{testing::internal::RE}!PartialMatch@{PartialMatch}}
+\index{PartialMatch@{PartialMatch}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{PartialMatch()}{PartialMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a1e81f9a87211bdca645e025f8f0236c8} 
+bool testing::\+internal::\+\+RE::\+\+Partial\+Match (\begin{DoxyParamCaption}\item[{const ::\+std::\+string \&}]{str}{, }\item[{const \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} \&}]{re}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a97495dd4c2bb9589522823f060c8e8ba}\index{testing::internal::RE@{testing::internal::RE}!PartialMatch@{PartialMatch}}
+\index{PartialMatch@{PartialMatch}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{PartialMatch()}{PartialMatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a97495dd4c2bb9589522823f060c8e8ba} 
+bool testing::\+internal::\+\+RE::\+\+Partial\+Match (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{const \doxymbox{\hyperlink{classtesting_1_1internal_1_1_r_e_ab215dbc2565fce641e1746ca43e9d68a}{RE}} \&}]{re}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a755aa35fb49255d8d17bd5451cdedc5e}\index{testing::internal::RE@{testing::internal::RE}!pattern@{pattern}}
+\index{pattern@{pattern}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{pattern()}{pattern()}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a755aa35fb49255d8d17bd5451cdedc5e} 
+const char \texorpdfstring{$\ast$}{*} testing::\+internal::\+\+RE::\+pattern (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{classtesting_1_1internal_1_1_r_e_doc-variable-members}
+\Hypertarget{classtesting_1_1internal_1_1_r_e_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a1627cf3c6e38a83518e7aefd659b938b}\index{testing::internal::RE@{testing::internal::RE}!full\_regex\_@{full\_regex\_}}
+\index{full\_regex\_@{full\_regex\_}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{full\_regex\_}{full\_regex\_}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a1627cf3c6e38a83518e7aefd659b938b} 
+regex\+\_\+t testing::\+internal::\+\+RE::\+full\+\_\+regex\_\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_af9062fefab96529ff785f50097416d64}\index{testing::internal::RE@{testing::internal::RE}!is\_valid\_@{is\_valid\_}}
+\index{is\_valid\_@{is\_valid\_}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_}{is\_valid\_}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_af9062fefab96529ff785f50097416d64} 
+bool testing::\+internal::\+\+RE::\+is\+\_\+valid\_\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a1b3e42916c61db479ae90c7a96c22a58}\index{testing::internal::RE@{testing::internal::RE}!partial\_regex\_@{partial\_regex\_}}
+\index{partial\_regex\_@{partial\_regex\_}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{partial\_regex\_}{partial\_regex\_}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a1b3e42916c61db479ae90c7a96c22a58} 
+regex\+\_\+t testing::\+internal::\+\+RE::\+partial\+\_\+regex\_\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_1_1internal_1_1_r_e_a44ab32241fab42db5b6f7482776658ec}\index{testing::internal::RE@{testing::internal::RE}!pattern\_@{pattern\_}}
+\index{pattern\_@{pattern\_}!testing::internal::RE@{testing::internal::RE}}
+\doxysubsubsection{\texorpdfstring{pattern\_}{pattern\_}}
+{\footnotesize\ttfamily \label{classtesting_1_1internal_1_1_r_e_a44ab32241fab42db5b6f7482776658ec} 
+const char\texorpdfstring{$\ast$}{*} testing::\+internal::\+\+RE::\+pattern\_\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku:\begin{DoxyCompactItemize}
+\item 
+packages/\+\+Microsoft.\+googletest.\+v140.\+windesktop.\+msvcstl.\+static.\+rt-\/dyn.\+1.\+8.\+1.\+8/\+build/\+native/\+include/\+gtest/\+internal/\doxymbox{\hyperlink{gtest-port_8h}{gtest-\/port.\+h}}\end{DoxyCompactItemize}

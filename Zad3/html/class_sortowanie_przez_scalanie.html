@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sortowanie przez scalanie (MergeSort): Dokumentacja szablonu klasy SortowaniePrzezScalanie&lt; T &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sortowanie przez scalanie (MergeSort)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Szukaj" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_sortowanie_przez_scalanie.html','','class_sortowanie_przez_scalanie-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja szablonu klasy SortowaniePrzezScalanie&lt; T &gt;</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Szablonowa klasa udostępniająca statyczne metody do sortowania wektorów algorytmem MergeSort.  
+ <a href="#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_sortowanie_przez_scalanie_8h_source.html">SortowaniePrzezScalanie.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:a96a2641c4c5e3b59b1f142f7c6aecabd" id="r_a96a2641c4c5e3b59b1f142f7c6aecabd"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a96a2641c4c5e3b59b1f142f7c6aecabd">sortuj</a> (vector&lt; T &gt; &amp;tablica)</td></tr>
+<tr class="memdesc:a96a2641c4c5e3b59b1f142f7c6aecabd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główna metoda publiczna uruchamiająca proces sortowania rosnącego przekazanego wektora.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Statyczne metody prywatne</h2></td></tr>
+<tr class="memitem:ae638a042f5f3730c4c1bce07ca85a7e8" id="r_ae638a042f5f3730c4c1bce07ca85a7e8"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ae638a042f5f3730c4c1bce07ca85a7e8">sortujRekurencyjnie</a> (vector&lt; T &gt; &amp;tablica, size_t lewy, size_t prawy)</td></tr>
+<tr class="memdesc:ae638a042f5f3730c4c1bce07ca85a7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rekurencyjna metoda dzieląca zadany przedział tablicy na dwie mniejsze podtablice.  <br /></td></tr>
+<tr class="memitem:a89202b042cdc83e7db0513c27e7ffa06" id="r_a89202b042cdc83e7db0513c27e7ffa06"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a89202b042cdc83e7db0513c27e7ffa06">scal</a> (vector&lt; T &gt; &amp;tablica, size_t lewy, size_t srodek, size_t prawy)</td></tr>
+<tr class="memdesc:a89202b042cdc83e7db0513c27e7ffa06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scala dwie sąsiednie, posortowane podtablice w jeden uporządkowany ciąg.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class SortowaniePrzezScalanie&lt; T &gt;</div><p>Szablonowa klasa udostępniająca statyczne metody do sortowania wektorów algorytmem MergeSort. </p>
+<p>Klasa implementuje stabilny algorytm sortowania przez scalanie w oparciu o strategię „dziel i zwyciężaj” (ang. Divide and Conquer) o złożoności obliczeniowej $O(n \log n)$. Dzięki wykorzystaniu szablonów obsługuje dowolne typy danych posiadające zdefiniowany operator porównania (&lt;=).</p>
+<dl class="tparams"><dt>Parametry Szablonu</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Typ elementów przechowywanych w sortowanym wektorze (np. int, long int, float, double) </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a89202b042cdc83e7db0513c27e7ffa06" name="a89202b042cdc83e7db0513c27e7ffa06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89202b042cdc83e7db0513c27e7ffa06">&#9670;&#160;</a></span>scal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_sortowanie_przez_scalanie.html">SortowaniePrzezScalanie</a>&lt; T &gt;::scal </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>tablica</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>lewy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>srodek</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>prawy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scala dwie sąsiednie, posortowane podtablice w jeden uporządkowany ciąg. </p>
+<p>Tworzy tymczasowe kopie lewego [lewy..srodek] oraz prawego [srodek+1..prawy] podprzedziału, a następnie przepisuje elementy w porządku niemalejącym z powrotem do wektora głównego.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tablica</td><td>Referencja do głównego wektora, w którym zapisywany jest wynik scalania. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lewy</td><td>Indeks początku lewej podtablicy. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srodek</td><td>Indeks końca lewej podtablicy (punkt podziału). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prawy</td><td>Indeks końca prawej podtablicy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Indeks bieżącego elementu w lewej podtablicy pomocniczej</p>
+<p>&lt; Indeks bieżącego elementu w prawej podtablicy pomocniczej</p>
+<p>&lt; Indeks docelowy w tablicy wynikowej</p>
+
+</div>
+</div>
+<a id="a96a2641c4c5e3b59b1f142f7c6aecabd" name="a96a2641c4c5e3b59b1f142f7c6aecabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a2641c4c5e3b59b1f142f7c6aecabd">&#9670;&#160;</a></span>sortuj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_sortowanie_przez_scalanie.html">SortowaniePrzezScalanie</a>&lt; T &gt;::sortuj </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>tablica</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Główna metoda publiczna uruchamiająca proces sortowania rosnącego przekazanego wektora. </p>
+<p>W przypadku tablic pustych lub jednoelementowych metoda kończy działanie natychmiast, nie wykonując zbędnych alokacji pamięci.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tablica</td><td>Referencja do wektora typu std::vector&lt;T&gt;, który ma zostać posortowany w miejscu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae638a042f5f3730c4c1bce07ca85a7e8" name="ae638a042f5f3730c4c1bce07ca85a7e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae638a042f5f3730c4c1bce07ca85a7e8">&#9670;&#160;</a></span>sortujRekurencyjnie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_sortowanie_przez_scalanie.html">SortowaniePrzezScalanie</a>&lt; T &gt;::sortujRekurencyjnie </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>tablica</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>lewy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>prawy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rekurencyjna metoda dzieląca zadany przedział tablicy na dwie mniejsze podtablice. </p>
+<p>Wyznacza indeks środkowy przedziału, wywołuje siebie rekurencyjnie dla lewej oraz prawej połowy, a następnie scala oba uporządkowane fragmenty metodą <a class="el" href="#a89202b042cdc83e7db0513c27e7ffa06" title="Scala dwie sąsiednie, posortowane podtablice w jeden uporządkowany ciąg.">scal()</a>.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tablica</td><td>Referencja do sortowanego wektora. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lewy</td><td>Indeks początkowy aktualnie rozpatrywanego przedziału. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prawy</td><td>Indeks końcowy aktualnie rozpatrywanego przedziału. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li><a class="el" href="_sortowanie_przez_scalanie_8h_source.html">SortowaniePrzezScalanie.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_sortowanie_przez_scalanie.html">SortowaniePrzezScalanie</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
