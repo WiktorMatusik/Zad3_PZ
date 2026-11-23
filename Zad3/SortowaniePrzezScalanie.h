@@ -19,7 +19,7 @@ using namespace std;
  * „dziel i zwyciężaj” (ang. Divide and Conquer) o złożoności obliczeniowej $O(n \log n)$.
  * Dzięki wykorzystaniu szablonów obsługuje dowolne typy danych posiadające zdefiniowany operator porównania (<=).
  *
- * @tparam T Typ elementów przechowywanych w sortowanym wektorze (np. int, long int, float, double).
+ * @tparam T Typ elementów przechowywanych w sortowanym wektorze (np. int, long int, float, double)
  */
 template <typename T>
 class SortowaniePrzezScalanie {

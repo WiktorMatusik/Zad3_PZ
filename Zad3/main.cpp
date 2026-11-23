@@ -15,7 +15,7 @@ using namespace std;
  * @brief Funkcja szablonowa wypisująca wszystkie elementy wektora na standardowe wyjście.
  *
  * @tparam T Typ danych przechowywanych w wektorze.
- * @param[in] tablica Stała referencja do wektora, którego zawartość ma zostać wyświetlona.
+ * @param[in] tablica Stała referencja do wektora, którego zawartość ma zostać wyświetlona
  */
 template <typename T>
 void wyswietlTablice(const vector<T>& tablica) {
