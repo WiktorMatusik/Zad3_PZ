@@ -14,7 +14,7 @@
 using namespace std;
 
 /**
- * @test Sprawdza, czy tablica już posortowana rosnąco pozostaje niezmieniona.
+ * @test Sprawdza, czy tablica już posortowana rosnąco pozostaje niezmieniona
  */
 TEST(TestySortowaniaPrzezScalanie, JuzPosortowanaRosnaco) {
     vector<int> tablica = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
