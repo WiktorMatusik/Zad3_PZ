@@ -13,7 +13,7 @@ void wyswietlTablice(const vector<T>& tablica) {
 }
 
 int main() {
-    vector<int> tablicaInt = { 38, 27, 43, 3, 9, 82, 10, -5, 0 };
+    vector<int> tablicaInt = { 14, 17, 33, 3, 9, 32, 7, -5, 0 };
     cout << "Tablica int przed sortowaniem:\n";
     wyswietlTablice(tablicaInt);
 
@@ -23,7 +23,7 @@ int main() {
 
     cout << "----------------------------------------\n";
 
-    vector<double> tablicaDouble = { 3.14, -2.71, 0.0, 42.5, -10.12, 1.618, 3.14 };
+    vector<double> tablicaDouble = { 3.14, -1.71, 0.0, 12.5, -10.12, 1.318, 6.14 };
     cout << "Tablica double przed sortowaniem:\n";
     wyswietlTablice(tablicaDouble);
 

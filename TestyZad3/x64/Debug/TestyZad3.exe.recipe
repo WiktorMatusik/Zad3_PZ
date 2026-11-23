@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\Zad3\x64\Debug\Zad3.exe</FullPath>
+      <FullPath>D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\Zad3_PZ\Zad3\x64\Debug\Zad3.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\Zad3\x64\Debug\TestyZad3.exe</FullPath>
+      <FullPath>D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\Zad3_PZ\Zad3\x64\Debug\TestyZad3.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

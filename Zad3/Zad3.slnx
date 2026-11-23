@@ -3,6 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="../TestyZad3/TestyZad3.vcxproj" />
-  <Project Path="Zad3.vcxproj" />
+  <Project Path="../TestyZad3/TestyZad3.vcxproj" Id="1046e323-7c7d-4f39-b775-f4af7f15ecdc" />
+  <Project Path="Zad3.vcxproj" Id="f8ad6871-7d5d-4987-b6b1-0e80748cbabd" />
 </Solution>

@@ -1,1 +1,2 @@
 D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\TestyZad3\x64\Debug\TestyZad3.vcxproj.Up2Date
+D:\Projekty_Studia_2026-27\Programowanie Zaawansowane\Zad3_PZ\TestyZad3\x64\Debug\TestyZad3.vcxproj.Up2Date
