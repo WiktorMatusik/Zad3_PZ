@@ -1,0 +1,36 @@
+\begin{theindex}
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{12}
+  \item {main.cpp}, \hyperpage{11}
+    \subitem {main}, \hyperpage{12}
+    \subitem {wyswietlTablice}, \hyperpage{12}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{12}
+
+  \indexspace
+
+  \item {scal}
+    \subitem {SortowaniePrzezScalanie$<$ T $>$}, \hyperpage{8}
+  \item {SortowaniePrzezScalanie$<$ T $>$}, \hyperpage{7}
+    \subitem {scal}, \hyperpage{8}
+    \subitem {sortuj}, \hyperpage{8}
+    \subitem {sortujRekurencyjnie}, \hyperpage{8}
+  \item {SortowaniePrzezScalanie.h}, \hyperpage{12}
+  \item {sortuj}
+    \subitem {SortowaniePrzezScalanie$<$ T $>$}, \hyperpage{8}
+  \item {sortujRekurencyjnie}
+    \subitem {SortowaniePrzezScalanie$<$ T $>$}, \hyperpage{8}
+
+  \indexspace
+
+  \item {wyswietlTablice}
+    \subitem {main.cpp}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Zad3}, \hyperpage{1}
+
+\end{theindex}
